@@ -77,7 +77,7 @@ dependencies {
 }
 ```
 
-Later we will create a release, and then ```develop-SNAPSHOT``` can be changed to the release tag.
+Later we will create a github release, and then ```develop-SNAPSHOT``` can be changed to the release tag.
 
 ## Project structure
 #### The project consists of two modules:
