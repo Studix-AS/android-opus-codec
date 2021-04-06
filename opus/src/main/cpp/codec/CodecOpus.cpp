@@ -124,7 +124,7 @@ std::vector<uint8_t> CodecOpus::decode(uint8_t *bytes, int length, int frameSize
     int ret = checkForNull("decode", false);
     if (ret < 0) return result;
 
-    opus_int16 *outBuffer = (opus_int16*) malloc(sizeof(opus_int16) * 1024);
+    opus_int16 *outBuffer = (opus_int16*) malloc(sizeof(opus_int16) * frameSize * decoderNumChannels);
 
     int resultLength = opus_decode(decoder, bytes, length, outBuffer, frameSize, 0);
     if (resultLength <= 0) {
