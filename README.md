@@ -58,7 +58,7 @@ codec.encoderRelease()
 codec.decoderRelease()
 ```
 
-## Setup
+## Setup [![](https://jitpack.io/v/Studix-AS/android-opus-codec.svg)](https://jitpack.io/#Studix-AS/android-opus-codec)
 
 Add this to the project root's _build.gradle_:
 ```gradle
