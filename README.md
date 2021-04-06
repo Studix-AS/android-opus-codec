@@ -58,6 +58,27 @@ codec.encoderRelease()
 codec.decoderRelease()
 ```
 
+## Setup
+
+Add this to the project root's _build.gradle_:
+```gradle
+allprojects {
+    repositories {
+        maven { url "https://jitpack.io" }
+    }
+}
+```
+
+and this to your app's _build.gradle_:
+
+```gradle
+dependencies {
+    compile 'com.github.Studix-AS:android-opus-codec:develop-SNAPSHOT'
+}
+```
+
+Later we will create a release, and then ```develop-SNAPSHOT``` can be changed to the release tag.
+
 ## Project structure
 #### The project consists of two modules:
 - **app** - here you can find a sample app that demonsrates ecoding, decoding and converting procedures by capturing an audio from device's mic and play it from a loud speaker. I recommend to check this app using a headphones, otherwise there may be echo in a hight levels of volume.
